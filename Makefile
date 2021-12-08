@@ -43,7 +43,3 @@ example1: example1.o $(OBJS)
 
 clean:
 	rm -fr bin lib *.o src/*.o
-
-%.o: %.c
-	$(CC) $< $(CFLAGS) -c -o $@
-
